@@ -73,7 +73,7 @@ body{
     position: 1;
     flex-direction: column;
     text-align: center;
-    width: 80vw;
+    width: 65vw;
     border: solid 2px green;
 }
 
@@ -83,7 +83,7 @@ body{
 
 .order-list{
     background-color:hsl(225, 100%, 98%);
-    width: 80vw;
+    width: 65vw;
     border-radius: 1rem;
     padding: 10px;
     display: grid;
