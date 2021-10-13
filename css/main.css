@@ -160,7 +160,8 @@ h1{
 /* on hover "change" item option switches to pale purple and no underline */
 .change-item:hover{
     text-decoration: none;
-    color: hsl(224, 23%, 55%);
+    /* color: hsl(224, 23%, 55%); */
+    opacity: 0.6;
 }
 
 ul{
@@ -186,6 +187,9 @@ ul{
     margin-top: 20px;
 }
 
+.payment-btn:hover{
+    opacity: 0.6;
+}
 
 .cancel-btn{
     /* background: white; */
@@ -199,6 +203,10 @@ ul{
     width: 73vw;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
 }
 
 /* footer */
