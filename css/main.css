@@ -112,8 +112,8 @@ h1{
     border-radius: 1rem;
     /* padding: 10px; */
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr;
-    column-gap: 0.5rem;
+    grid-template-columns: 1fr 4fr 1fr;
+    column-gap: 0.25rem;
     border: 2px solid orange;
 }
 
@@ -132,12 +132,14 @@ h1{
 .item-img{
     padding: 2px;
     border: 2px solid green;
+    width:  50px;
 }
 
 /* item name - ex. "annual plan" */
 .item-type{
-    font-weight: 700;
-    color: color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    padding-right: 15px;
 }
 
 /* item price - $59.99 */
@@ -148,7 +150,8 @@ h1{
 /* "change" link next to order item*/
 .change-item{
     font-weight: 700;
-    padding-left: 10%;
+    /* padding-left: 5%; */
+    font-size: .75rem;
 }
 
 /* on hover "change" item option switches to pale purple and no underline */
@@ -160,7 +163,8 @@ h1{
 ul{
     list-style-type: none;
     padding-left: 0;
-    /* padding-right: 25px; */
+    font-size: .75rem;
+    padding-right: 25px;
     /* margin: 0; */
     /* padding: 10px; */
 }
