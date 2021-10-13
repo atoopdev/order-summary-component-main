@@ -8,6 +8,8 @@ html{
      box-sizing: inherit;
 } 
      
+/* Mobile size: 375px */
+
 
 /* main */
 body{
@@ -19,26 +21,45 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     border: solid 1px black;
 }
 
-/* hero and hero containers */
+p {
+   color: hsl(224, 23%, 55%); 
+   font-size: .75rem;
+    
+}
 
+h1{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.25rem;
+}
+
+
+
+
+/* hero */
+
+/* header picture */
 .hero{
     height: 40vw;
+    width: 85vw;
     background: url('../images/illustration-hero.svg') center/cover no-repeat;
     border-top-left-radius: 1.75rem;
     border-top-right-radius: 1.75rem;
-    margin-top: 20vw;
-    margin-right: 8vw;
-    margin-left: 8vw;
+    margin-top: 15vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
     display: flex;
     position: 0;
     border: solid 1px red;
 }
 
+/*
 .hero-container{
     position: absolute;
     top: 0;
@@ -50,15 +71,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px blue;
+    border: solid 10px blue;
 }
+*/
 
+/* holds everything below hero pic */
 .order-container{
+    width: 85vw;
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin-right: 8vw;
-    margin-left: 8vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
     margin-bottom: 20vw;
     /* padding: 10px 20px; */
     align-items: center;
@@ -73,8 +97,9 @@ body{
     position: 1;
     flex-direction: column;
     text-align: center;
-    width: 65vw;
+    width: 60vw;
     border: solid 2px green;
+    padding-bottom: 10px;
 }
 
 .order-summary-text h1{
@@ -83,34 +108,80 @@ body{
 
 .order-list{
     background-color:hsl(225, 100%, 98%);
-    width: 65vw;
+    width: 60vw;
     border-radius: 1rem;
-    padding: 10px;
+    /* padding: 10px; */
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 5fr;
+    column-gap: 0.5rem;
     border: 2px solid orange;
 }
 
+/* container for design components of item ordered - icon, name, price, option to modify */
+/* arrange in a horizontal row */
 .order-item{
-display: flex;
-flex-direction: row;
-/* overflow: hidden; */
-border: 1px solid black;
-justify-content: center;
-align-items: center;;
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    border: 1px solid black;
+    justify-content: center;
+    align-items:center;
 }
 
+/* icon for item - music in this case */
 .item-img{
     padding: 2px;
     border: 2px solid green;
 }
 
+/* item name - ex. "annual plan" */
+.item-type{
+    font-weight: 700;
+    color: color: hsl(223, 47%, 23%);
+}
+
+/* item price - $59.99 */
+.item-price {
+    color: hsl(224, 16%, 77%);
+}
+
+/* "change" link next to order item*/
+.change-item{
+    font-weight: 700;
+    padding-left: 10%;
+}
+
+/* on hover "change" item option switches to pale purple and no underline */
+.change-item:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 10px;
+    padding-left: 0;
+    /* padding-right: 25px; */
+    /* margin: 0; */
+    /* padding: 10px; */
 }
+
+/* buttons */
+.payment-btn{
+    background:hsl(245, 75%, 52%);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:700;
+    padding: 15px;
+    border:none;
+    border-radius: 9px;
+    width: 60vw;
+    margin-top: 20px;
+}
+
+.cancel-btn{
+
+}
+
 /* footer */
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -120,3 +191,5 @@ ul{
     color: hsl(228, 45%, 44%); 
 }
 
+
+/* Desktop: 1440px */
