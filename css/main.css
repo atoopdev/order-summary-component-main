@@ -27,11 +27,6 @@ body{
     border: solid 1px black;
 }
 
-p {
-   color: hsl(224, 23%, 55%); 
-   font-size: .90rem;
-    
-}
 
 h1{
     font-weight: 900;
@@ -97,9 +92,13 @@ h1{
     position: 1;
     flex-direction: column;
     text-align: center;
-    width: 60vw;
+    width: 65vw;
     border: solid 2px green;
     padding-bottom: 10px;
+    color: hsl(224, 23%, 55%); 
+   font-size: .85rem;
+   font-weight: 900px;
+   line-height: 1.5;
 }
 
 .order-summary-text h1{
@@ -108,7 +107,7 @@ h1{
 
 .order-list{
     background-color:hsl(225, 100%, 98%);
-    width: 60vw;
+    width: 73vw;
     border-radius: 1rem;
     /* padding: 10px; */
     display: grid;
@@ -139,12 +138,15 @@ h1{
 .item-type{
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    padding-right: 15px;
+    padding-right: 55px;
+    font-size: .80rem;
+    
 }
 
 /* item price - $59.99 */
 .item-price {
     color: hsl(224, 16%, 77%);
+    font-size:.75rem;
 }
 
 /* "change" link next to order item*/
@@ -152,6 +154,7 @@ h1{
     font-weight: 700;
     /* padding-left: 5%; */
     font-size: .75rem;
+    padding-right: 10px;
 }
 
 /* on hover "change" item option switches to pale purple and no underline */
@@ -163,8 +166,8 @@ h1{
 ul{
     list-style-type: none;
     padding-left: 0;
-    font-size: .75rem;
-    padding-right: 25px;
+    
+    
     /* margin: 0; */
     /* padding: 10px; */
 }
@@ -178,11 +181,21 @@ ul{
     padding: 15px;
     border:none;
     border-radius: 9px;
-    width: 60vw;
+    width: 73vw;
     margin-top: 20px;
 }
 
 .cancel-btn{
+    background: white;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:900;
+    padding: 15px;
+    border:none;
+    border-radius: 9px;
+    width: 73vw;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
 }
 
