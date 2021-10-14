@@ -102,9 +102,11 @@ h1{
     height: 85px;
     border-radius: .75rem;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     column-gap: 0.25rem;
     margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     /* border: 2px solid orange; */
 }
 
@@ -241,10 +243,11 @@ h1{
 }
 
 .order-list{
-    width: 300px;
+    width: 360px;
 }
 .item-img{
-    width: 55px;
+    margin-left: 15px;
+    /* width: 55px; */
 }
 .item-type{
     font-size: 1rem;
@@ -252,11 +255,19 @@ h1{
 .item-price{
     font-size: 1rem;
 }
+ul{
+    padding-right: 27px;
+}
 .change-item{
     font-size: .85rem;
     font-weight: 900;
+    margin-right: 15px;
 }
 .payment-btn{
-    width: 300px;
+    margin-top: 30px;
+    width: 360px;
 }
+.cancel-btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
