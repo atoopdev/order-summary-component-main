@@ -12,20 +12,20 @@ html{
 
 
 /* main */
+/* houses background image with gradient overlay*/
 body{
     min-width: 375px;
     width: 100%;
     height: 100%;
     background-image: 
     linear-gradient(to bottom, rgba(224, 232, 255, .8), rgba(224, 232, 255, .8)), url('../images/pattern-background-mobile.svg');
-    /* background: url('../images/pattern-background-mobile.svg') right top; */
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
-    /* border: solid 1px black; */
+    /* border: solid 1px black; used for design debug */
 }
 
 
@@ -35,24 +35,17 @@ h1{
     font-size: 1.35rem;
 }
 
-
-
-
-/* hero */
-
-/* header picture */
+/* hero picture */
 .hero{
     height: 155px;
     width: 325px;
     background: url('../images/illustration-hero.svg') center/cover no-repeat;
     border-top-left-radius: 1.75rem;
     border-top-right-radius: 1.75rem;
-    /* centers container in relation to screen */
-    margin: 0 auto;
+    margin: 0 auto; /* centers container in relation to screen */
     display: flex;
     position: 0;
-    /* margin-top: 10vw; */
-    /* border: solid 1px red; */
+    /* border: solid 1px red; used for design debug */
 }
 
 /* main container */
@@ -61,9 +54,7 @@ h1{
     background-color: white;
     display: flex;
     flex-direction: column;
-
-    /* centers container relative to screen */
-    margin: 0 auto;
+    margin: 0 auto; /* centers container relative to screen */
     margin-bottom: 20vw;
     margin-top: 15vw;
     align-items: center;
@@ -73,21 +64,22 @@ h1{
     border-bottom-left-radius: 1.75rem;
     border-bottom-right-radius: 1.75rem;
     box-shadow: 0px 25px 40px -14px rgba(102, 98, 153, 0.3);
-    /* border: 1px solid purple; */
+    /* border: 1px solid purple; used for design debug*/
 }
 
+/* main text block */
 .order-summary-text{
     display: flex;
     position: 1;
     flex-direction: column;
     text-align: center;
     width: 255px;
-    /* border: solid 2px green; */
+    /* border: solid 2px green; used for design debug */
     padding-bottom: 5px;
     color: hsl(224, 23%, 55%); 
-   font-size: .95rem;
-   font-weight: 900px;
-   line-height: 1.5;
+    font-size: .95rem;
+    font-weight: 900px;
+    line-height: 1.5;
    
 }
 
@@ -96,6 +88,7 @@ h1{
     margin-bottom: 0px;
 }
 
+/* section for displaying order items */
 .order-list{
     background-color:hsl(225, 100%, 98%);
     width: 274px;
@@ -107,7 +100,7 @@ h1{
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    /* border: 2px solid orange; */
+    /* border: 2px solid orange; used for design debug */
 }
 
 /* container for design components of item ordered - icon, name, price, option to modify */
@@ -115,39 +108,35 @@ h1{
 .order-item{
     display: flex;
     flex-direction: row;
-    /* overflow: hidden; */
-    /* border: 1px solid black; */
+    /* border: 1px solid black; used for design debug*/
     justify-content: center;
     align-items:center;
 }
 
-/* icon for item - music in this case */
+/* icon for order item - music in this case */
 .item-img{
     padding: 2px;
-    /* border: 2px solid green; */
+    /* border: 2px solid green; used for design debug */
     width:  55px;
 }
 
-/* item name - ex. "annual plan" */
+/* order item name - ex. "annual plan" */
 .item-type{
     font-weight: 900;
     color: hsl(223, 47%, 23%);
     padding-right: 53px;
     font-size: .85rem;
-    
 }
 
 /* item price - $59.99 */
 .item-price {
-    /* color: hsl(224, 16%, 77%); */
     color: hsl(224, 23%, 55%);
     font-size:.85rem;
 }
 
-/* "change" link next to order item*/
+/* "change" link to right of order item*/
 .change-item{
     font-weight: 900;
-    /* padding-left: 5%; */
     font-size: .80rem;
     padding-right: 10px;
 }
@@ -159,17 +148,15 @@ h1{
     opacity: 0.6;
 }
 
+/* used to style item name and price. both coded as ul in html */
 ul{
     list-style-type: none;
     padding-left: 0;
     line-height: 1.5;
-    
-    
-    /* margin: 0; */
-    /* padding: 10px; */
 }
 
 /* buttons */
+
 .payment-btn{
     background:hsl(245, 75%, 52%);
     color: white;
@@ -184,6 +171,7 @@ ul{
     margin-top: 20px;
 }
 
+/* color lightens to paler purple on hover */
 .payment-btn:hover{
     opacity: 0.6;
 }
@@ -202,6 +190,7 @@ ul{
     margin-bottom: 20px;
 }
 
+/* text darkens on hover */
 .cancel-btn:hover{
     color: hsl(223, 47%, 23%);
 }
@@ -215,18 +204,17 @@ ul{
     color: hsl(228, 45%, 44%); 
 }
 
-
+/* Desktop styling */
 /* Desktop: 1440px */
 
 
 @media screen and (min-width:768px){
 .hero{
-     height: 225px;
+    height: 225px;
     width: 450px; 
 }
 
 .order-container{
-    /* height: 225px; */
     width: 450px;
 }
 
@@ -247,7 +235,6 @@ h1{
 }
 .item-img{
     margin-left: 15px;
-    /* width: 55px; */
 }
 .item-type{
     font-size: 1rem;
