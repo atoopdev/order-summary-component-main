@@ -1,3 +1,5 @@
+/* updating code to incorporate improvements suggested by Raymart Pamplona @pikamart via Frontend Mentor */
+
 html{
         box-sizing: border-box;
         
@@ -16,7 +18,11 @@ html{
 body{
     min-width: 375px;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: 
     linear-gradient(to bottom, rgba(224, 232, 255, .8), rgba(224, 232, 255, .8)), url('../images/pattern-background-mobile.svg');
     background-size: contain;
@@ -25,6 +31,8 @@ body{
     font-size: 16px;
     margin: 0;
     padding: 0;
+
+
     /* border: solid 1px black; used for design debug */
 }
 
@@ -35,9 +43,15 @@ h1{
     font-size: 1.35rem;
 }
 
+h2{
+    font-size: .9rem;
+    font-weight: 900;
+
+}
+
 /* hero picture */
 .hero{
-    height: 155px;
+    height: 157px;
     width: 325px;
     background: url('../images/illustration-hero.svg') center/cover no-repeat;
     border-top-left-radius: 1.75rem;
@@ -54,9 +68,9 @@ h1{
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin: 0 auto; /* centers container relative to screen */
-    margin-bottom: 20vw;
-    margin-top: 15vw;
+    /* margin: 0 auto; centers container relative to screen */
+    /* margin-bottom: 20vw; */
+    /* margin-top: 50px; */
     align-items: center;
     justify-content: center;
     border-top-left-radius: 1.75rem;
@@ -75,16 +89,16 @@ h1{
     text-align: center;
     width: 255px;
     /* border: solid 2px green; used for design debug */
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     color: hsl(224, 23%, 55%); 
     font-size: .95rem;
     font-weight: 900px;
-    line-height: 1.5;
+    line-height: 1.75;
    
 }
 
 .order-summary-text h1{
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 0px;
 }
 
@@ -108,30 +122,41 @@ h1{
 .order-item{
     display: flex;
     flex-direction: row;
-    /* border: 1px solid black; used for design debug*/
+    /* border: 1px solid black; */
     justify-content: center;
     align-items:center;
+    position: relative;
 }
 
 /* icon for order item - music in this case */
 .item-img{
     padding: 2px;
     /* border: 2px solid green; used for design debug */
-    width:  55px;
+    width:  47px;
+    margin-right: 5px;
+    margin-left: 15px;
 }
 
+.item-type h2{
+    
+}
 /* order item name - ex. "annual plan" */
 .item-type{
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    padding-right: 53px;
-    font-size: .85rem;
+    position:absolute;
+    top: 10px;
+    left:10px;
 }
 
 /* item price - $59.99 */
 .item-price {
     color: hsl(224, 23%, 55%);
     font-size:.85rem;
+    position: absolute;
+    top: 45px;
+    left:10px;
+    
 }
 
 /* "change" link to right of order item*/
@@ -148,13 +173,6 @@ h1{
     opacity: 0.6;
 }
 
-/* used to style item name and price. both coded as ul in html */
-ul{
-    list-style-type: none;
-    padding-left: 0;
-    line-height: 1.5;
-}
-
 /* buttons */
 
 .payment-btn{
@@ -168,7 +186,7 @@ ul{
     border-radius: 9px;
     width: 274px;
     box-shadow: 0px 20px 30px -14px hsla(245, 75%, 52%, .6);
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 /* color lightens to paler purple on hover */
@@ -187,7 +205,7 @@ ul{
     border-radius: 9px;
     width: 274px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* text darkens on hover */
@@ -215,19 +233,20 @@ body{
     linear-gradient(to bottom, rgba(224, 232, 255, .8), rgba(224, 232, 255, .8)), url('../images/pattern-background-desktop.svg');
     }
 .hero{
-    height: 225px;
+    height: 220px;
     width: 450px; 
 }
 
 .order-container{
     width: 450px;
+    margin-top: 0px;
 }
 
 h1{
     font-weight: 900;
     color: hsl(223, 47%, 23%);
     font-size: 1.75rem;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .order-summary-text{
@@ -237,18 +256,26 @@ h1{
 
 .order-list{
     width: 360px;
+    height: 95px;
+    margin-right: 0;
 }
 .item-img{
-    margin-left: 15px;
+    padding: 2px;
+    width: 55px;
 }
+.item-type h2{
+    font-size:1rem;
+    font-weight: 900;
+}
+
 .item-type{
-    font-size: 1rem;
+    top: 7px;
+    left: 12px;
 }
 .item-price{
-    font-size: 1rem;
-}
-ul{
-    padding-right: 27px;
+    font-size: 1.05rem;
+    top: 46px;
+    left: 12px;
 }
 .change-item{
     font-size: .85rem;
@@ -258,8 +285,10 @@ ul{
 .payment-btn{
     margin-top: 30px;
     width: 360px;
+    cursor: pointer;
 }
 .cancel-btn{
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
 }
